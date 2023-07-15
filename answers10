@@ -1,0 +1,98 @@
+Que1.What is the Spring MVC framework?
+
+Ans:-Spring MVC is a Java framework that is used to develop web applications. It is built on a Model-View-Controller (MVC) pattern and possesses all the basic features of a spring framework, such as Dependency Injection, Inversion of Control.
+
+Que2.What are the benefits of Spring MVC framework over other MVC frameworks?
+
+Ans:-Benefits of Spring MVC framework
+
+Pre-defined Templates:-Spring framework contains various types of templates for Hibernate, JDBC, and JPA technologies. With the help of this approach, developers are not required to define complex code. 
+
+Example: JdbcTemplate -we do not need to write the logic for creating a statement, committing the transaction, creating a connection, and exception handling. It saves the time-consuming approach.
+
+Loose Coupling:-consider Spring applications to be loosely coupled as per the dependency injection mechanisms.
+
+Easy and Simple to Test:-It is easy to test the entire application using a spring framework with a dependency injection mechanism. The EJB or Struts application requires the server to execute the application.
+
+Non-invasive:-As per the Plain Old Java Object (POJO) technique, Spring is easy to implement as it does not force the developer to inherit certain classes or implementations on any interface.
+
+Fast Development:-With the help of Dependency Injection, it is easy to integrate the framework and support the development of JavaEE-based applications.
+
+Strong Abstraction Support:-Spring supports the strong abstraction capability for Java EE-based specifications, such as JMS, JDBC, JPA, and JTA.
+
+Spring's Web Framework is Well-Organized:- It is a web MVC framework that delivers a fantastic option to web frameworks for developing applications using Struts or different widespread web frameworks.
+
+Spring Delivers a Suitable API:-It translates technology-specific anomalies thrown by JDBC, Hibernate, or JDO into uniform, uncontrolled exceptions.
+
+Lightweight IoC:-It is lightweight, particularly when compared to EJB containers, for example. This helps create and deploy applications on computers with restricted memory and CPU resources.
+
+Constant Transaction Management:-Spring provides an interface that can help scale down to a local transaction (for example, using a single database) and scale up to global transactions (for example, JTA).
+
+Que3.What is DispatcherServlet in Spring MVC? In other words, can you explain the Spring MVC architecture?
+
+Ans:-The DispatcherServlet is the front controller in Spring web applications. It's used to create web applications and REST services in Spring MVC. In a traditional Spring web application, this servlet is defined in the web.
+
+Front Controller:-This is the Dispatcher servlet controller also called as Front controller which is the main controller which manages the flow of the Spring MVC application.
+
+Controller:-Controller is the one which handles the specific request which is mapped by its request mapping.
+
+Model:-Model is the class which holds the data to transfer between view and controller.
+Anything in the view is transferred to controller using model class and vice versa.
+
+View Template:-View is the UI thing which is used for displaying the data,it can be jsp or any other view technology.Specific view for the corresponding request is displayed based on the view resolver, it helps in finding the exact view name.
+
+Que4.What is a View Resolver pattern and explain its significance in Spring MVC?
+
+Ans:-All MVC frameworks provide a way of working with views. Spring does that the view resolvers, which enable to render models in the browser without tying the implementation to a specific view technology. The ViewResolver maps view names to actual views.
+
+The Spring MVC framework is comprised of the following components:
+1.Model: A model can be an object or collection of objects which basically contains the data of the application.
+2.View: A view is used for displaying the information to the user in a specific format. Spring supports various technologies like freemarker, velocity, and thymeleaf.
+3.Controller: It contains the logical part of the application. @Controller annotation is used to mark that class as controller.
+4.Front Controller: It remains responsible for managing the flow of the web application. DispatcherServlet acts as a front controller in Spring MVC.
+
+Que5.What are the differences between @RequestParam and @PathVariable annotations?
+
+Ans:-@RequestParam is used to capture query parameters or form parameters from the URL, while @PathVariable is used to capture values from the URL path. They also have different syntax, usage, and behavior in handling URL parameters in Spring MVC applications.
+
+Que6.What is the Model in Spring MVC?
+
+Ans:-In Spring MVC, the model works a container that contains the data of the application. Here, a data can be in any form such as objects, strings, information from the database, etc. It is required to place the Model interface in the controller part of the application.
+
+Que7.What is the role of @ModelAttribute annotation?
+
+Ans:-@ModelAttribute is an annotation that binds a method parameter or method return value to a named model attribute, and then exposes it to a web view.Demonstrate the usability and functionality of this annotation through a common concept, a form submitted from a company's employee.
+
+Que8.What is the significance of @Repository annotation?
+
+Ans:-Spring @Repository annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation on objects.
+
+Que9.What does REST stand for? and what is RESTful web services?
+
+Ans:-Representational State Transfer (REST) is a software architecture that imposes conditions on how an API should work. REST was initially created as a guideline to manage communication on a complex network like the internet.
+
+Que10.What is differences between RESTful web services and SOAP web services?
+
+Ans:-SOAP web services:-
+
+1.Simple Object Access Protocol
+2.SOAP is a protocol for communication between applications
+3.SOAP API exposes the operation.
+4.SOAP is independent and can work with any transport protocol.
+5.SOAP supports only XML data exchange
+6.SOAP messages are larger, which makes communication slower.
+7.SOAP is difficult to scale. The server maintains state by storing all previous messages exchanged with a client.
+8.SOAP supports encryption with additional overheads.
+9.SOAP is useful in legacy applications and private APIs.
+
+
+RESTful web services:-
+1.Representational State Transfer
+2.REST is an architecture style for designing communication interfaces.
+3.REST API exposes the data.
+4.REST works only with HTTPS.
+5.REST supports XML, JSON, plain text, HTML.
+6.REST has faster performance due to smaller messages and caching support.
+7.REST is easy to scale. It’s stateless, so every message is processed independently of previous messages.
+8.REST supports encryption without affecting performance.
+9.REST is useful in modern applications and public APIs.
